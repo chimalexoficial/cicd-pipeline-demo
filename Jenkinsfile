@@ -3,7 +3,7 @@ pipeline {
 
   environment {
     SONARQUBE = 'SonarQube'                                 // Jenkins → System → SonarQube servers (Name)
-    NEXUS_URL = 'http://YOUR_IP:8081/repository/maven-releases'
+    NEXUS_URL = 'http://116.203.222.206:8081/repository/maven-releases'
     NEXUS_CREDS = credentials('nexus-deployer')             // Jenkins credential ID
     // SLACK_WEBHOOK = credentials('slack-webhook')         // Uncomment if you added Slack
   }
